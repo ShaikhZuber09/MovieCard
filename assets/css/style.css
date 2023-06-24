@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-pri:#100c50;
+    --color-sec:#193980;
+    --color-white:#fff;
+}
+.header{
+    background-color: var(--color-pri);
+    padding: 2rem;
+    line-height: 1;
+}
+.header input{
+    font-size: 2rem;
+}
+a:active,a:link,a:visited,
+a:hover{
+    text-decoration: none !important;
+}
+body{
+    background-color: var(--color-sec)!important;
+}
+.logo:link, .logo:visited{
+    
+        color:var(--color-white);
+        font-size: 3.6rem;
+}
+
+.myCard{
+    height: 450px;
+    width: 100%;
+}
+.myCard figure{
+    height: 100%;
+}
+.cardImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.myCard .card-body{
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+.myCard figcaption{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-pri);
+    color: var(--color-white);
+    font-size: 18px;
+    padding: 1rem;
+}
+.myCard figcaption p{
+    margin-bottom: 0;
+}
+.overview{
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-white);
+    font-size: 1.5rem;
+    max-height: 75%;
+    overflow-y: auto;
+    transform: scale(0);
+    transition: all 0.7s ease-in-out;
+}
+.overview h4{
+font-size: 2rem;
+}
+.myCard .card-body:hover .overview{
+    transform: scale(1);
+}
+.badge-green{
+    color: green;
+    background-color: var(--color-white);
+}
+.badge-yellow{
+    color: yellow;
+    background-color: var(--color-white);
+}
+.badge-orange{
+    color: orange;
+    background-color: var(--color-white);
+}
